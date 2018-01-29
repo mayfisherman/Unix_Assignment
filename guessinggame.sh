@@ -6,7 +6,7 @@ function readGuess {
   read response
 }
 
-correctNumOfFiles=3
+correctNumOfFiles=$(ls | wc -l)
 echo "How many files are in the current directory?"
 readGuess
 
